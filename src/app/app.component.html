@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <app-cockpit (serverCreated)="onServerAdded($event)"
     (bpCreated)="onBlueprintAdded($event)"
   
@@ -19,4 +19,15 @@
       </app-server-element>
     </div>
   </div>
-</div>
+</div> -->
+
+
+<app-bind-it-assignment></app-bind-it-assignment>
+
+<hr>
+
+<app-game-control (intervalFired)="onIntervalFired($event)"> </app-game-control>
+
+<app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd>
+
+<app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
